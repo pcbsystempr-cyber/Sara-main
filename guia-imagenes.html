@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Imágenes - Vital Stays</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 2rem;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #1a202c;
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+        .subtitle {
+            text-align: center;
+            color: #718096;
+            margin-bottom: 3rem;
+            font-size: 1.2rem;
+        }
+        .section {
+            margin-bottom: 3rem;
+        }
+        .section-title {
+            color: #667eea;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #667eea;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .image-card {
+            border: 2px dashed #cbd5e0;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        .image-card:hover {
+            border-color: #667eea;
+            background-color: #f7fafc;
+            transform: translateY(-5px);
+        }
+        .image-placeholder {
+            background: #e2e8f0;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #718096;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .apartment-placeholder {
+            height: 200px;
+        }
+        .avatar-placeholder {
+            height: 100px;
+            width: 100px;
+            margin: 0 auto 1rem;
+            border-radius: 50%;
+        }
+        .hero-placeholder {
+            height: 150px;
+        }
+        .filename {
+            background: #667eea;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+        }
+        .size {
+            color: #4a5568;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+        .description {
+            color: #718096;
+            margin-top: 0.5rem;
+            font-size: 0.95rem;
+        }
+        .alert {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        .alert-title {
+            color: #92400e;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        .alert-text {
+            color: #78350f;
+        }
+        .success {
+            background: #d1fae5;
+            border-left: 4px solid #10b981;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+        .success-title {
+            color: #065f46;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        .success-text {
+            color: #047857;
+        }
+        .folder-path {
+            background: #1a202c;
+            color: #10b981;
+            padding: 1rem;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            margin: 2rem 0;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📸 Guía de Imágenes</h1>
+        <p class="subtitle">Coloca tus imágenes en la carpeta indicada con los nombres exactos</p>
+        
+        <div class="folder-path">
+            📁 apartment-rental-site/images/
+        </div>
+
+        <div class="alert">
+            <div class="alert-title">💡 Importante</div>
+            <div class="alert-text">
+                Los nombres de archivo deben ser EXACTAMENTE como se muestran abajo. 
+                Si no colocas las imágenes, se mostrarán imágenes de ejemplo automáticamente.
+            </div>
+        </div>
+
+        <!-- Apartamentos -->
+        <div class="section">
+            <h2 class="section-title">🏠 Apartamentos Destacados</h2>
+            <div class="grid">
+                <div class="image-card">
+                    <div class="Brenda/apartments-rental-site/galeria/image1.jpg">🏢</div>
+                    <div class="filename">apartment1.jpg</div>
+                    <div class="size">Tamaño: 600 x 400 px</div>
+                    <div class="description">Apartamento Moderno en el Centro</div>
+                </div>
+                <div class="image-card">
+                    <div class="image-placeholder apartment-placeholder">🌆</div>
+                    <div class="filename">apartment2.jpg</div>
+                    <div class="size">Tamaño: 600 x 400 px</div>
+                    <div class="description">Apartamento Espacioso con Vista</div>
+                </div>
+                <div class="image-card">
+                    <div class="image-placeholder apartment-placeholder">🏘️</div>
+                    <div class="filename">apartment3.jpg</div>
+                    <div class="size">Tamaño: 600 x 400 px</div>
+                    <div class="description">Apartamento Céntrico y Acogedor</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Avatares -->
+        <div class="section">
+            <h2 class="section-title">👤 Avatares de Testimonios</h2>
+            <div class="grid">
+                <div class="image-card">
+                    <div class="image-placeholder avatar-placeholder">👩</div>
+                    <div class="filename">avatar1.jpg</div>
+                    <div class="size">Tamaño: 100 x 100 px</div>
+                    <div class="description">María García - Madrid</div>
+                </div>
+                <div class="image-card">
+                    <div class="image-placeholder avatar-placeholder">👨</div>
+                    <div class="filename">avatar2.jpg</div>
+                    <div class="size">Tamaño: 100 x 100 px</div>
+                    <div class="description">Carlos Rodríguez - Barcelona</div>
+                </div>
+                <div class="image-card">
+                    <div class="image-placeholder avatar-placeholder">👩</div>
+                    <div class="filename">avatar3.jpg</div>
+                    <div class="size">Tamaño: 100 x 100 px</div>
+                    <div class="description">Ana Martínez - Valencia</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Background -->
+        <div class="section">
+            <h2 class="section-title">🌆 Imagen de Fondo (Opcional)</h2>
+            <div class="grid">
+                <div class="image-card">
+                    <div class="image-placeholder hero-placeholder">🌃</div>
+                    <div class="filename">hero-background.jpg</div>
+                    <div class="size">Tamaño: 1600 x 900 px o mayor</div>
+                    <div class="description">Fondo de la sección Hero (aparece con opacidad baja)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="success">
+            <div class="success-title">✅ Pasos para cambiar las imágenes:</div>
+            <div class="success-text">
+                1. Coloca tus imágenes en la carpeta <strong>apartment-rental-site/images/</strong><br>
+                2. Renombra tus imágenes con los nombres exactos mostrados arriba<br>
+                3. Actualiza la página principal (presiona F5 en el navegador)<br>
+                4. ¡Listo! Tus imágenes aparecerán automáticamente
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

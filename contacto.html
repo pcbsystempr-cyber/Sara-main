@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Alquiler - Vital Stays</title>
+    <meta name="description"
+        content="Envía tu solicitud de alquiler en Vital Stays y comparte tu información para aplicar al apartamento que te interesa.">
+    <meta name="theme-color" content="#1a237e">
+    <meta property="og:site_name" content="Vital Stays">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Solicitud de Alquiler - Vital Stays">
+    <meta property="og:description"
+        content="Envía tu solicitud de alquiler en Vital Stays y comparte tu información para aplicar al apartamento que te interesa.">
+    <meta property="og:image" content="images/VitalStays.jpeg">
+    <meta property="og:image:alt" content="Vital Stays">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Solicitud de Alquiler - Vital Stays">
+    <meta name="twitter:description"
+        content="Envía tu solicitud de alquiler en Vital Stays y comparte tu información para aplicar al apartamento que te interesa.">
+    <meta name="twitter:image" content="images/VitalStays.jpeg">
+    <link rel="icon" href="images/VitalStays.jpeg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="images/VitalStays.jpeg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/VitalStays.jpeg" alt="Vital Stays Logo" class="logo-img"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='inline'">
+                <svg class="logo-fallback" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" style="display:none;">
+                    <path d="M16 2L4 10V28H12V20H20V28H28V10L16 2Z" fill="#1a237e" />
+                </svg>
+                <span>Vital Stays</span>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </div>
+            <ul id="navMenu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="listings.html">Listados</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="contacto.html" class="btn-nav active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-header">
+                <h1>Solicitud de Alquiler</h1>
+                <p>Complete el formulario para solicitar el alquiler de un apartamento</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <form id="rentalForm" class="rental-form">
+                        <h3>Información Personal</h3>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Nombre Completo *</label>
+                                <input type="text" id="fullName" name="fullName" required
+                                    placeholder="Ej: Juan Pérez García">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico *</label>
+                                <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Teléfono *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+34 600 000 000">
+                            </div>
+                            <div class="form-group">
+                                <label for="dni">DNI/NIE *</label>
+                                <input type="text" id="dni" name="dni" required placeholder="12345678A">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="birthDate">Fecha de Nacimiento *</label>
+                                <input type="date" id="birthDate" name="birthDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="nationality">Nacionalidad *</label>
+                                <input type="text" id="nationality" name="nationality" required
+                                    placeholder="Ej: Española">
+                            </div>
+                        </div>
+
+                        <h3>Información del Apartamento</h3>
+
+                        <div class="form-row">
+                            <input type="hidden" id="apartmentId" name="apartmentId">
+                            <div class="form-group">
+                                <label for="apartmentName">Apartamento Seleccionado *</label>
+                                <input type="text" id="apartmentName" name="apartmentName" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="apartmentArea">Área/Ubicación *</label>
+                                <input type="text" id="apartmentArea" name="apartmentArea" readonly>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="moveInDate">Fecha de Entrada Deseada *</label>
+                                <input type="date" id="moveInDate" name="moveInDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="rentalPeriod">Período de Alquiler *</label>
+                                <select id="rentalPeriod" name="rentalPeriod" required>
+                                    <option value="">Seleccione...</option>
+                                    <option value="3">3 meses</option>
+                                    <option value="6">6 meses</option>
+                                    <option value="12">12 meses</option>
+                                    <option value="24">24 meses</option>
+                                    <option value="indefinido">Indefinido</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <h3>Información Laboral</h3>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="occupation">Profesión/Ocupación *</label>
+                                <input type="text" id="occupation" name="occupation" required
+                                    placeholder="Ej: Médico, Enfermera, etc.">
+                            </div>
+                            <div class="form-group">
+                                <label for="workplace">Lugar de Trabajo *</label>
+                                <input type="text" id="workplace" name="workplace" required
+                                    placeholder="Nombre del hospital/centro">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="monthlyIncome">Ingresos Mensuales (€) *</label>
+                                <input type="number" id="monthlyIncome" name="monthlyIncome" required
+                                    placeholder="2000">
+                            </div>
+                            <div class="form-group">
+                                <label for="employmentType">Tipo de Contrato *</label>
+                                <select id="employmentType" name="employmentType" required>
+                                    <option value="">Seleccione...</option>
+                                    <option value="indefinido">Indefinido</option>
+                                    <option value="temporal">Temporal</option>
+                                    <option value="autonomo">Autónomo</option>
+                                    <option value="practicas">Prácticas</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <h3>Información Adicional</h3>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="numOccupants">Número de Ocupantes *</label>
+                                <input type="number" id="numOccupants" name="numOccupants" min="1" required
+                                    placeholder="1">
+                            </div>
+                            <div class="form-group">
+                                <label for="hasPets">¿Tiene Mascotas? *</label>
+                                <select id="hasPets" name="hasPets" required>
+                                    <option value="">Seleccione...</option>
+                                    <option value="no">No</option>
+                                    <option value="si">Sí</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group" id="petsDetailsGroup" style="display: none;">
+                            <label for="petsDetails">Detalles de las Mascotas</label>
+                            <textarea id="petsDetails" name="petsDetails" rows="2"
+                                placeholder="Tipo, raza, tamaño..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="emergencyContact">Contacto de Emergencia *</label>
+                            <input type="text" id="emergencyContact" name="emergencyContact" required
+                                placeholder="Nombre y teléfono">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="references">Referencias (opcional)</label>
+                            <textarea id="references" name="references" rows="3"
+                                placeholder="Propietarios anteriores, empleadores, etc."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="additionalComments">Comentarios Adicionales</label>
+                            <textarea id="additionalComments" name="additionalComments" rows="4"
+                                placeholder="Cualquier información adicional que desee compartir..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="termsAccepted" name="termsAccepted" required>
+                                <span>Acepto los términos y condiciones y autorizo el tratamiento de mis datos
+                                    personales *</span>
+                            </label>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-secondary"
+                                onclick="window.history.back()">Cancelar</button>
+                            <button type="submit" class="btn btn-primary">Enviar Solicitud</button>
+                        </div>
+                    </form>
+
+                    <div id="successMessage" class="success-message" style="display: none;">
+                        <div class="success-icon">✓</div>
+                        <h2>¡Solicitud Enviada!</h2>
+                        <p>Hemos recibido su solicitud de alquiler. Nos pondremos en contacto con usted en las próximas
+                            24-48 horas.</p>
+                        <button class="btn btn-primary" onclick="window.location.href='index.html'">Volver al
+                            Inicio</button>
+                    </div>
+                </div>
+
+                <div class="contact-info-sidebar">
+                    <div class="info-card">
+                        <h3>Información de Contacto</h3>
+                        <div class="info-item">
+                            <span class="info-icon">📧</span>
+                            <div>
+                                <strong>Email</strong>
+                                <p>info@rentaapartamentos.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">📱</span>
+                            <div>
+                                <strong>Teléfono</strong>
+                                <p>+34 900 123 456</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">📍</span>
+                            <div>
+                                <strong>Dirección</strong>
+                                <p>Madrid, España</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">🕐</span>
+                            <div>
+                                <strong>Horario</strong>
+                                <p>Lun - Vie: 9:00 - 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Documentos Requeridos</h3>
+                        <ul class="documents-list">
+                            <li>✓ DNI/NIE vigente</li>
+                            <li>✓ Contrato de trabajo</li>
+                            <li>✓ Últimas 3 nóminas</li>
+                            <li>✓ Declaración de la renta</li>
+                            <li>✓ Referencias laborales</li>
+                            <li>✓ Aval bancario (opcional)</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card highlight-card">
+                        <h3>Para Profesionales de la Salud</h3>
+                        <p>Ofrecemos condiciones especiales y proceso acelerado para médicos, enfermeras y personal
+                            sanitario.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Vital Stays</h3>
+                <p>Tu hogar perfecto te está esperando. Encuentra apartamentos verificados para profesionales de la
+                    salud.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="listings.html">Listados</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>📧 info@rentaapartamentos.com</li>
+                    <li>📱 +34 900 123 456</li>
+                    <li>📍 Madrid, España</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Vital Stays. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="api/config.js"></script>
+    <script src="supabase-api.js"></script>
+    <script src="script.js"></script>
+    <script src="contacto.js"></script>
+</body>
+
+</html>

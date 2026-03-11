@@ -1,0 +1,94 @@
+═══════════════════════════════════════════════════════════════════════════
+  INSTRUCCIONES PARA AGREGAR IMÁGENES DE APARTAMENTOS
+═══════════════════════════════════════════════════════════════════════════
+
+📁 UBICACIÓN DE LAS IMÁGENES:
+   Todas las imágenes deben estar en la carpeta: apartment-rental-site/images/
+
+📸 IMÁGENES NECESARIAS:
+   Necesitas agregar 10 imágenes de apartamentos con los siguientes nombres:
+
+   ✅ YA TIENES (3 imágenes):
+   ├─ apartment1.jpg  → Apartamento Moderno en el Centro (Madrid, $1,200)
+   ├─ apartment2.jpg  → Apartamento Espacioso con Vista (Barcelona, $1,500)
+   └─ apartment3.jpg  → Apartamento Céntrico y Acogedor (Valencia, $1,000)
+
+   ❌ FALTAN (7 imágenes):
+   ├─ apartment4.jpg  → Loft Moderno en Malasaña (Madrid, $1,800)
+   ├─ apartment5.jpg  → Dúplex Acogedor (Sevilla, $900)
+   ├─ apartment6.jpg  → Penthouse con Vistas al Mar (Barcelona, $2,200)
+   ├─ apartment7.jpg  → Estudio Minimalista (Madrid, $750)
+   ├─ apartment8.jpg  → Casa con Jardín (Valencia, $2,500)
+   ├─ apartment9.jpg  → Apartamento Cerca del Hospital (Madrid, $1,100)
+   └─ apartment10.jpg → Apartamento Luminoso (Barcelona, $1,350)
+
+📐 ESPECIFICACIONES RECOMENDADAS:
+   • Formato: JPG o PNG
+   • Tamaño recomendado: 600x400 píxeles (mínimo)
+   • Relación de aspecto: 3:2 (horizontal)
+   • Peso: Menos de 500KB por imagen (para carga rápida)
+
+🎨 TIPO DE IMÁGENES SUGERIDAS:
+   
+   apartment4.jpg  → Loft moderno, espacios abiertos, estilo industrial
+   apartment5.jpg  → Dúplex acogedor, dos pisos, ambiente cálido
+   apartment6.jpg  → Penthouse de lujo, vistas panorámicas, terraza
+   apartment7.jpg  → Estudio pequeño, minimalista, eficiente
+   apartment8.jpg  → Casa con jardín exterior, espaciosa, familiar
+   apartment9.jpg  → Apartamento profesional, cerca de zona médica
+   apartment10.jpg → Apartamento luminoso, ventanas grandes, luz natural
+
+🔄 SISTEMA DE RESPALDO:
+   • Si no agregas las imágenes, el sistema mostrará automáticamente 
+     imágenes de respaldo de Unsplash (ya configurado)
+   • Cuando agregues tus propias imágenes, simplemente colócalas en 
+     la carpeta images/ con los nombres correctos
+   • El sistema detectará automáticamente tus imágenes y las usará
+
+📝 CÓMO AGREGAR LAS IMÁGENES:
+
+   OPCIÓN 1 - Copiar imágenes existentes:
+   1. Si tienes imágenes en otra carpeta (como "galeria/")
+   2. Cópialas a la carpeta "images/"
+   3. Renómbralas según la lista de arriba
+
+   OPCIÓN 2 - Descargar nuevas imágenes:
+   1. Busca imágenes de apartamentos en sitios como:
+      • Unsplash.com (gratis, alta calidad)
+      • Pexels.com (gratis, alta calidad)
+      • Pixabay.com (gratis)
+   2. Descárgalas
+   3. Renómbralas según la lista
+   4. Colócalas en la carpeta images/
+
+   OPCIÓN 3 - Usar tus propias fotos:
+   1. Toma fotos de los apartamentos reales
+   2. Edítalas si es necesario (brillo, contraste)
+   3. Renómbralas según la lista
+   4. Colócalas en la carpeta images/
+
+💡 CONSEJOS:
+   • Usa imágenes de buena calidad y bien iluminadas
+   • Asegúrate de que las imágenes sean horizontales (landscape)
+   • Evita imágenes muy pesadas (comprime si es necesario)
+   • Mantén un estilo visual consistente entre todas las imágenes
+   • Las imágenes deben mostrar el interior del apartamento
+
+🚀 VERIFICACIÓN:
+   Después de agregar las imágenes:
+   1. Abre listings.html en tu navegador
+   2. Verifica que todas las imágenes se muestren correctamente
+   3. Si ves una imagen de Unsplash, significa que falta esa imagen local
+
+═══════════════════════════════════════════════════════════════════════════
+  ¿NECESITAS AYUDA?
+═══════════════════════════════════════════════════════════════════════════
+
+Si tienes problemas:
+• Verifica que los nombres de archivo sean exactos (apartment4.jpg, no Apartment4.jpg)
+• Asegúrate de que las imágenes estén en la carpeta correcta
+• Revisa que las extensiones sean .jpg o .png (minúsculas)
+• Actualiza la página (F5) después de agregar las imágenes
+
+═══════════════════════════════════════════════════════════════════════════
+

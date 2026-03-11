@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Apartamento - Vital Stays</title>
+    <meta name="description"
+        content="Consulta el detalle del apartamento, su galería de imágenes, ubicación, precio y características antes de solicitar el alquiler.">
+    <meta name="theme-color" content="#1a237e">
+    <meta property="og:site_name" content="Vital Stays">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Detalles del Apartamento - Vital Stays">
+    <meta property="og:description"
+        content="Consulta el detalle del apartamento, su galería de imágenes, ubicación, precio y características antes de solicitar el alquiler.">
+    <meta property="og:image" content="images/VitalStays.jpeg">
+    <meta property="og:image:alt" content="Vital Stays">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Detalles del Apartamento - Vital Stays">
+    <meta name="twitter:description"
+        content="Consulta el detalle del apartamento, su galería de imágenes, ubicación, precio y características antes de solicitar el alquiler.">
+    <meta name="twitter:image" content="images/VitalStays.jpeg">
+    <link rel="icon" href="images/VitalStays.jpeg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="images/VitalStays.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/VitalStays.jpeg" alt="Vital Stays Logo" class="logo-img"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='inline'">
+                <svg class="logo-fallback" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" style="display:none;">
+                    <path d="M16 2L4 10V28H12V20H20V28H28V10L16 2Z" fill="#1a237e" />
+                </svg>
+                <span>Vital Stays</span>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </div>
+            <ul id="navMenu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="listings.html">Listados</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="contacto.html" class="btn-nav">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="apartment-detail">
+        <div class="detail-container">
+            <div class="detail-images">
+                <div class="slideshow-container">
+                    <img src="images/apartment1.jpg" alt="Apartamento Principal" id="main-image"
+                        onerror="this.src='https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600&h=400&fit=crop'">
+                    <button class="prev" onclick="changeSlide(-1)"></button>
+                    <button class="next" onclick="changeSlide(1)"></button>
+                </div>
+                <div class="thumbnail-images">
+                    <img src="images/apartment1.jpg" alt="Imagen 1" onclick="currentSlide(1)"
+                        onerror="this.src='https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=150&h=100&fit=crop'">
+                    <img src="images/apartment2.jpg" alt="Imagen 2" onclick="currentSlide(2)"
+                        onerror="this.src='https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=150&h=100&fit=crop'">
+                    <img src="images/apartment3.jpg" alt="Imagen 3" onclick="currentSlide(3)"
+                        onerror="this.src='https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=150&h=100&fit=crop'">
+                </div>
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+            <div class="detail-info">
+                <h1 id="apartment-title">Apartamento Moderno</h1>
+                <p class="price" id="apartment-price">$1,200/mes</p>
+                <p class="location" id="apartment-location">Ubicación: Centro</p>
+                <div class="description">
+                    <h3>Descripción</h3>
+                    <p id="apartment-description">Este apartamento moderno ofrece comodidad y estilo en el corazón de la
+                        ciudad. Con 2 habitaciones, 1 baño, cocina equipada y balcón privado. Perfecto para parejas o
+                        profesionales.</p>
+                </div>
+                <div class="features">
+                    <h3>Características</h3>
+                    <ul id="apartment-features">
+                        <li>2 Habitaciones</li>
+                        <li>1 Baño</li>
+                        <li>Cocina Equipada</li>
+                        <li>Balcón</li>
+                        <li>Estacionamiento</li>
+                    </ul>
+                </div>
+                <button class="btn" onclick="contactOwner()">Contactar Propietario</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Vital Stays</h3>
+                <p>Tu plataforma de confianza para encontrar el apartamento perfecto.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="listings.html">Listados</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>📧 info@rentaapartamentos.com</li>
+                    <li>📱 +34 900 123 456</li>
+                    <li>📍 Madrid, España</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Vital Stays. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="api/config.js"></script>
+    <script src="supabase-api.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+═══════════════════════════════════════════════════════════════
+  INSTRUCCIONES PARA CAMBIAR LAS IMÁGENES
+═══════════════════════════════════════════════════════════════
+
+📁 CARPETA DE IMÁGENES: apartment-rental-site/images/
+
+Coloca tus imágenes en la carpeta "images" con los siguientes nombres:
+
+───────────────────────────────────────────────────────────────
+🏠 APARTAMENTOS DESTACADOS (Página Principal)
+───────────────────────────────────────────────────────────────
+
+1. apartment1.jpg  → Apartamento Moderno en el Centro
+   - Tamaño recomendado: 600x400 píxeles
+   - Formato: JPG, PNG o WebP
+
+2. apartment2.jpg  → Apartamento Espacioso con Vista
+   - Tamaño recomendado: 600x400 píxeles
+   - Formato: JPG, PNG o WebP
+
+3. apartment3.jpg  → Apartamento Céntrico y Acogedor
+   - Tamaño recomendado: 600x400 píxeles
+   - Formato: JPG, PNG o WebP
+
+───────────────────────────────────────────────────────────────
+🎭 AVATARES DE TESTIMONIOS
+───────────────────────────────────────────────────────────────
+
+4. avatar1.jpg  → María García
+   - Tamaño recomendado: 100x100 píxeles
+   - Formato: JPG, PNG o WebP
+
+5. avatar2.jpg  → Carlos Rodríguez
+   - Tamaño recomendado: 100x100 píxeles
+   - Formato: JPG, PNG o WebP
+
+6. avatar3.jpg  → Ana Martínez
+   - Tamaño recomendado: 100x100 píxeles
+   - Formato: JPG, PNG o WebP
+
+───────────────────────────────────────────────────────────────
+🌆 IMAGEN DE FONDO DEL HERO (OPCIONAL)
+───────────────────────────────────────────────────────────────
+
+7. hero-background.jpg  → Fondo de la sección principal
+   - Tamaño recomendado: 1600x900 píxeles o mayor
+   - Formato: JPG, PNG o WebP
+   - Nota: Esta imagen aparece con opacidad baja detrás del texto
+
+───────────────────────────────────────────────────────────────
+✨ NOTAS IMPORTANTES
+───────────────────────────────────────────────────────────────
+
+• Si NO colocas una imagen, se mostrará automáticamente una imagen
+  de ejemplo de Unsplash (gracias al atributo onerror).
+
+• Puedes usar cualquier formato de imagen: JPG, PNG, WebP, etc.
+
+• Para mejor rendimiento, optimiza tus imágenes antes de subirlas.
+
+• Los nombres de archivo deben ser EXACTAMENTE como se indican arriba
+  (respetando mayúsculas/minúsculas).
+
+───────────────────────────────────────────────────────────────
+🔧 CÓMO CAMBIAR MÁS IMÁGENES
+───────────────────────────────────────────────────────────────
+
+Si quieres agregar más apartamentos o cambiar otras imágenes:
+
+1. Abre el archivo: index.html
+2. Busca la etiqueta <img src="images/...">
+3. Cambia el nombre del archivo por el tuyo
+4. Guarda el archivo
+
+Ejemplo:
+  <img src="images/apartment1.jpg" ...>
+  
+Cámbialo por:
+  <img src="images/mi-apartamento-favorito.jpg" ...>
+
+───────────────────────────────────────────────────────────────
+
+¡Listo! Ahora solo arrastra tus imágenes a la carpeta "images" 
+y actualiza la página en el navegador (F5) para ver los cambios.
+
+═══════════════════════════════════════════════════════════════
+
